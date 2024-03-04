@@ -37,7 +37,7 @@ const Navbar = () => {
       {user? <div onClick={showMenu}>
         <p className="cursor-pointer relative"><FaBars/></p>
         {menu && <Menu/>}
-      </div>:<h3><Link to="/register">Register</Link></h3>}
+      </div>:<h3><Link to="/register"></Link></h3>}
     </div>
     <div onClick={showMenu} className="md:hidden text-lg">
       <p className="cursor-pointer relative"><FaBars/></p>
