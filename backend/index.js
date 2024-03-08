@@ -32,11 +32,14 @@ const connectDB=async()=>{
 
 
 //middlewares
+// app.use(cors({
+//     origin: '*'
+//   }));
+dotenv.config()
+app.use(express.json())
 app.use(cors({
     origin: '*'
   }));
-dotenv.config()
-app.use(express.json())
 app.use("/images",express.static(path.join(__dirname,"/images")))
 //app.use(cors({origin:"http://localhost:5173",credentials:true}))
 //app.use(cors({origin:process.env.FRONTEND_URL,credentials:true}))
